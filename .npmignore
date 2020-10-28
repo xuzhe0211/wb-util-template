@@ -1,0 +1,8 @@
+node_modules/
+rollup.config.base.js
+rollup.config.browser.js
+rollup.config.dist.js
+rollup.config.js
+npm-debug.log*
+package-lock.json
+.DS_Store
