@@ -13,7 +13,7 @@ module.exports = function(options){
 			type: 'input',
 			name: 'description',
 			message: '项目描述,可不填',
-			default: options.name || ''
+			default: options.description || ''
 		},
 		{
 			type: 'input',
