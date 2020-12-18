@@ -1,4 +1,5 @@
 const babel = require('rollup-plugin-babel');
+const json = require('rollup-plugin-json');
 const node = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
 const vue = require('rollup-plugin-vue');
@@ -29,8 +30,9 @@ const babelPlugin = babel({
 const builtinsPlugin = builtins();
 const globalsPlugin = globals();
 const uglifyPlugin = uglify();
+const jsonPlugin = json();
 
-const plugins = [ nodePlugin, commonjsPlugin, globalsPlugin, builtinsPlugin, vuePlugin, babelPlugin ];
+const plugins = [ nodePlugin, commonjsPlugin, globalsPlugin, builtinsPlugin, vuePlugin, babelPlugin, jsonPlugin ];
 
 module.exports = {
     plugins,
